@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Founders Toolkit</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header>
+        <h1>AI Founders Toolkit</h1>
+        <p>Start to collect feedback on my problem.</p>
+      </header>
+
+      <section class="card form-card">
+        <h2>Problem and stakeholder feedback</h2>
+        <form id="feedback-form">
+          <label for="problem">Problem you are solving</label>
+          <textarea id="problem" rows="4" placeholder="Describe the problem your idea solves" required></textarea>
+
+          <div class="feedback-group">
+            <h3>Stakeholder 1</h3>
+            <label for="resonate1">Does this problem resonate with them?</label>
+            <textarea id="resonate1" rows="3" placeholder="Yes / No and why" required></textarea>
+            <label for="matter1">What aspects do they think matter most?</label>
+            <textarea id="matter1" rows="3" placeholder="What matters most here?" required></textarea>
+            <label for="questions1">What questions or concerns come to mind?</label>
+            <textarea id="questions1" rows="3" placeholder="Questions or concerns" required></textarea>
+            <label for="missing1">What are you missing about this problem?</label>
+            <textarea id="missing1" rows="3" placeholder="What else should you know?" required></textarea>
+          </div>
+
+          <div class="feedback-group">
+            <h3>Stakeholder 2</h3>
+            <label for="resonate2">Does this problem resonate with them?</label>
+            <textarea id="resonate2" rows="3" placeholder="Yes / No and why" required></textarea>
+            <label for="matter2">What aspects do they think matter most?</label>
+            <textarea id="matter2" rows="3" placeholder="What matters most here?" required></textarea>
+            <label for="questions2">What questions or concerns come to mind?</label>
+            <textarea id="questions2" rows="3" placeholder="Questions or concerns" required></textarea>
+            <label for="missing2">What are you missing about this problem?</label>
+            <textarea id="missing2" rows="3" placeholder="What else should you know?" required></textarea>
+          </div>
+
+          <div class="button-row">
+            <button type="submit" class="primary">Save Problem and Feedback</button>
+            <button type="button" id="reset-button">Clear</button>
+          </div>
+        </form>
+      </section>
+
+      <section id="summary-section" class="card summary-card hidden">
+        <h2>Collected feedback</h2>
+        <div class="summary-block">
+          <h3>Problem</h3>
+          <p id="summary-problem"></p>
+        </div>
+        <div class="summary-block">
+          <h3>Stakeholder 1</h3>
+          <p><strong>Resonate:</strong> <span id="summary-resonate1"></span></p>
+          <p><strong>What matters most:</strong> <span id="summary-matter1"></span></p>
+          <p><strong>Questions / concerns:</strong> <span id="summary-questions1"></span></p>
+          <p><strong>Missing:</strong> <span id="summary-missing1"></span></p>
+        </div>
+        <div class="summary-block">
+          <h3>Stakeholder 2</h3>
+          <p><strong>Resonate:</strong> <span id="summary-resonate2"></span></p>
+          <p><strong>What matters most:</strong> <span id="summary-matter2"></span></p>
+          <p><strong>Questions / concerns:</strong> <span id="summary-questions2"></span></p>
+          <p><strong>Missing:</strong> <span id="summary-missing2"></span></p>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
